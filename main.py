@@ -20,7 +20,7 @@ X_train = X_train_df.to_numpy()
 X_test = X_test_df.to_numpy()
 
 # Initialize and train
-nn = NeuralNetwork(input_size=784, hidden_size1=128, hidden_size2=64, output_size=10, learning_rate=0.1, decay_rate=0.95)
+nn = NeuralNetwork(input_size=784, hidden_size1=256, hidden_size2=256, output_size=10, learning_rate=0.1, decay_rate=0.95)
 
 nn.train(X_train, y_train, epochs=10, batch_size=64)
 
