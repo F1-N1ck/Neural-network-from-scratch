@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
-from neural_network import NeuralNetwork
+from NN import NeuralNetwork
 
 # Load MNIST
 mnist = fetch_openml('mnist_784', version=1, as_frame=True)
